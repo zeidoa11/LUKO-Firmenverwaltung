@@ -18,6 +18,7 @@ public class FirmaHinzufuegenDlg extends javax.swing.JDialog
 
     private Boolean isOK;
     private Firma firma;
+    public static final String keinlogoPathname = System.getProperty("user.dir")+File.separator+"src"+File.separator+"logos"+File.separator+"keinlogo.png";
 
     public Boolean getIsOK()
     {
@@ -118,7 +119,7 @@ public class FirmaHinzufuegenDlg extends javax.swing.JDialog
             firma = new Firma(name, new ImageIcon(logopath));
         }else
         {
-            firma = new Firma(name, new ImageIcon(System.getProperty("user.dir")+File.separator+"src"+File.separator+"logos"+File.separator+"keinlogo.png"));
+            firma = new Firma(name, new ImageIcon(keinlogoPathname));
         }
         isOK = true;
         this.dispose();

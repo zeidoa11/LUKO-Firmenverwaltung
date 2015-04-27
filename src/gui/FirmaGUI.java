@@ -7,6 +7,7 @@ package gui;
 
 import beans.Firma;
 import bl.FirmaTableModel;
+import bl.FirmaTableRenderer;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -18,6 +19,7 @@ public class FirmaGUI extends javax.swing.JFrame implements Runnable
 {
     FirmaTableModel ftm;
     FirmaHinzufuegenDlg firmaHinzufuegenDlg;
+    FirmaTableRenderer ftr;
     /**
      * Creates new form FirmaGUI
      */
@@ -31,7 +33,8 @@ public class FirmaGUI extends javax.swing.JFrame implements Runnable
         t1.start();
         ftm = new FirmaTableModel();
         taFirmen.setModel(ftm);
-        
+        ftr = new FirmaTableRenderer();
+        taFirmen.setDefaultRenderer(Object.class, ftr);
     }
 
     /**

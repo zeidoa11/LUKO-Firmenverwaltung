@@ -52,7 +52,7 @@ public class FirmaTableModel extends AbstractTableModel
         switch (columnIndex)
         {
             case 0: return f.getName();
-            case 1: return f.getLogo().getImage();
+            case 1: return f.getLogo();
             default: return null;
         }
     }
