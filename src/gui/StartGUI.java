@@ -126,6 +126,7 @@ public class StartGUI extends javax.swing.JFrame
         FirmaGUI firma = new FirmaGUI();
         firma.setVisible(true);
         this.dispose();
+        System.out.println("tets");
     }//GEN-LAST:event_btStartActionPerformed
 
     /**
