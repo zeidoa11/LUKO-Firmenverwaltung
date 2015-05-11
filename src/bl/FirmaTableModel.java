@@ -11,7 +11,7 @@ import javax.swing.table.AbstractTableModel;
 
 /**
  *
- * @author Enis Lushtaku
+ * @author ein großer dick
  */
 public class FirmaTableModel extends AbstractTableModel
 {
