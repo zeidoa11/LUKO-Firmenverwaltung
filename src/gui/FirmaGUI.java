@@ -21,7 +21,8 @@ public class FirmaGUI extends javax.swing.JFrame implements Runnable
     public FirmaGUI()
     {
         initComponents();
-        this.setTitle("LUKO Firmenverwaltung");
+     JOptionPane.showMessageDialog(this, "SWAG");
+        this.setTitle("LUKO Firmenverwaltung für Homos");
         this.setLocationRelativeTo(null);
         this.setResizable(false);
         Thread t1 = new Thread(this);
