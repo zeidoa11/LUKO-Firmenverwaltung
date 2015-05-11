@@ -12,6 +12,7 @@ package beans;
  */
 public class Mitarbeiter extends Person
 {
+    private int gehalt;
     
     
 }

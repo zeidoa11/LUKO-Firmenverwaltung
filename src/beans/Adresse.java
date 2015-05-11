@@ -14,7 +14,8 @@ public class Adresse
     private String strasse;
     private int hausnummer;
     private int stock;
-    private int tür;
+    private int tuer;
     private int plz;
     private String stadt;
+    
 }

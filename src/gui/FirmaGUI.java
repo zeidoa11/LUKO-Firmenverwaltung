@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package gui;
 
 import beans.Firma;
@@ -140,6 +135,13 @@ public class FirmaGUI extends javax.swing.JFrame implements Runnable
         btVerwaltung.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btVerwaltung.setForeground(new java.awt.Color(255, 255, 255));
         btVerwaltung.setText("Verwaltung");
+        btVerwaltung.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                onVerwaltung(evt);
+            }
+        });
         jPanel5.add(btVerwaltung);
 
         btFirmaLoeschen.setText("Firma löschen");
@@ -163,6 +165,11 @@ public class FirmaGUI extends javax.swing.JFrame implements Runnable
             ftm.addFirma(firma);
         }
     }//GEN-LAST:event_onFirmaHinzufuegen
+
+    private void onVerwaltung(java.awt.event.ActionEvent evt)//GEN-FIRST:event_onVerwaltung
+    {//GEN-HEADEREND:event_onVerwaltung
+        // TODO add your handling code here:
+    }//GEN-LAST:event_onVerwaltung
 
     /**
      * @param args the command line arguments

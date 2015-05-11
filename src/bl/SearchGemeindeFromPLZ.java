@@ -19,9 +19,15 @@ public class SearchGemeindeFromPLZ
     private final String path = System.getProperty("user.dir")
             +File.separator+"src"
             +File.separator+"files"
-            +File.separator+"";
+            +File.separator+"plz_ort";
     private File file;
     private FileReader fReader;
     private BufferedReader bReader;
     
+    
+    
+    public static void main(String[] args)
+    {
+        
+    }
 }
